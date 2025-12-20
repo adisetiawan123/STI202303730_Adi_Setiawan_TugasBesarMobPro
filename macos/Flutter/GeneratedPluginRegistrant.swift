@@ -5,12 +5,6 @@
 import FlutterMacOS
 import Foundation
 
-<<<<<<< HEAD
-import geolocator_apple
-
-func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  GeolocatorPlugin.register(with: registry.registrar(forPlugin: "GeolocatorPlugin"))
-=======
 import file_selector_macos
 import firebase_auth
 import firebase_core
@@ -31,5 +25,4 @@ func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   SqflitePlugin.register(with: registry.registrar(forPlugin: "SqflitePlugin"))
   UrlLauncherPlugin.register(with: registry.registrar(forPlugin: "UrlLauncherPlugin"))
   WebViewFlutterPlugin.register(with: registry.registrar(forPlugin: "WebViewFlutterPlugin"))
->>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
 }
