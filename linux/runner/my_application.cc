@@ -46,11 +46,19 @@ static void my_application_activate(GApplication* application) {
   if (use_header_bar) {
     GtkHeaderBar* header_bar = GTK_HEADER_BAR(gtk_header_bar_new());
     gtk_widget_show(GTK_WIDGET(header_bar));
+<<<<<<< HEAD
     gtk_header_bar_set_title(header_bar, "tugasbesarmobpro");
     gtk_header_bar_set_show_close_button(header_bar, TRUE);
     gtk_window_set_titlebar(window, GTK_WIDGET(header_bar));
   } else {
     gtk_window_set_title(window, "tugasbesarmobpro");
+=======
+    gtk_header_bar_set_title(header_bar, "travel_wisata_lokal");
+    gtk_header_bar_set_show_close_button(header_bar, TRUE);
+    gtk_window_set_titlebar(window, GTK_WIDGET(header_bar));
+  } else {
+    gtk_window_set_title(window, "travel_wisata_lokal");
+>>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
   }
 
   gtk_window_set_default_size(window, 1280, 720);

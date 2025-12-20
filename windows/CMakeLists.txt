@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+<<<<<<< HEAD
 project(tugasbesarmobpro LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "tugasbesarmobpro")
+=======
+project(travel_wisata_lokal LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "travel_wisata_lokal")
+>>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

@@ -5,7 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
+<<<<<<< HEAD
 	<string>Tugasbesarmobpro</string>
+=======
+	<string>Travel Wisata Lokal</string>
+>>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +17,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+<<<<<<< HEAD
 	<string>tugasbesarmobpro</string>
+=======
+	<string>travel_wisata_lokal</string>
+>>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

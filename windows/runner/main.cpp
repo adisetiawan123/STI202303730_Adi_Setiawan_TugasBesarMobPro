@@ -27,7 +27,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(1280, 720);
+<<<<<<< HEAD
   if (!window.Create(L"tugasbesarmobpro", origin, size)) {
+=======
+  if (!window.Create(L"travel_wisata_lokal", origin, size)) {
+>>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "tugasbesarmobpro",
     "short_name": "tugasbesarmobpro",
+=======
+    "name": "travel_wisata_lokal",
+    "short_name": "travel_wisata_lokal",
+>>>>>>> 0070e5ab76186d541bcbb6464df6e38c3571cca9
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
