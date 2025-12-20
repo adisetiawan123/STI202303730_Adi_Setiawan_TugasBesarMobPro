@@ -1,0 +1,54 @@
+# Quick Reference: Firebase Setup Required
+
+## Problem
+App shows: `API key not valid. Please pass a valid API key.`
+
+## Causes
+1. `firebase_options.dart` uses dummy key: `AIzaSyDummyKeyForDevelopment`
+2. Missing: `android/app/google-services.json`
+
+## Solution (5 minutes)
+
+### 1. Get Real Firebase Key
+- Go to [Firebase Console](https://console.firebase.google.com)
+- Project Settings → API Keys → Copy "Browser key" (starts with `AIzaSy...`)
+
+### 2. Update firebase_options.dart
+Replace `AIzaSyDummyKeyForDevelopment` with your real key in 4 places:
+- `web` constant
+- `android` constant
+- `ios` constant
+- `macos` constant
+
+### 3. Get google-services.json
+- Firebase Console → Project Settings → Download `google-services.json`
+- Place at: `android/app/google-services.json`
+
+### 4. Rebuild
+```powershell
+flutter clean && flutter pub get && flutter run
+```
+
+---
+
+## Commands to Execute
+
+```powershell
+cd d:\Android\travel_wisata_lokal
+
+# 1. Check if google-services.json exists
+Test-Path android/app/google-services.json
+
+# 2. Check if API key is still dummy
+Select-String "Dummy" lib/firebase_options.dart
+
+# 3. Clean and rebuild
+flutter clean
+flutter pub get
+flutter run
+```
+
+---
+
+## Detailed Instructions
+See: `FIREBASE_SETUP_FIX.md`

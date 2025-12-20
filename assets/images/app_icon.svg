@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="globeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4fc3f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0288d1;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main background circle -->
+  <circle cx="512" cy="512" r="500" fill="url(#bgGradient)"/>
+  
+  <!-- Globe/World circle -->
+  <circle cx="512" cy="380" r="220" fill="url(#globeGradient)" stroke="white" stroke-width="8"/>
+  
+  <!-- Landmass simplified (continents) -->
+  <g fill="white" opacity="0.9">
+    <!-- Simple landmass shapes for continents -->
+    <ellipse cx="480" cy="340" rx="60" ry="50"/>
+    <ellipse cx="580" cy="360" rx="50" ry="45"/>
+    <path d="M 420 420 Q 410 440 430 450 Q 450 445 440 420 Z" fill="white"/>
+  </g>
+  
+  <!-- Location pin -->
+  <g>
+    <!-- Pin circle -->
+    <circle cx="512" cy="620" r="90" fill="#ffc107" stroke="white" stroke-width="6"/>
+    <!-- Pin point -->
+    <path d="M 440 620 L 512 720 L 584 620 Q 550 650 512 670 Q 474 650 440 620 Z" fill="#ff9800" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Inner circle -->
+    <circle cx="512" cy="620" r="50" fill="white" stroke="white" stroke-width="3"/>
+    <!-- Center dot -->
+    <circle cx="512" cy="620" r="25" fill="#ff5722"/>
+  </g>
+  
+  <!-- Compass lines for accent -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="4" opacity="0.6">
+    <line x1="512" y1="100" x2="512" y2="150"/>
+    <line x1="824" y1="200" x2="780" y2="230"/>
+    <line x1="900" y1="512" x2="850" y2="512"/>
+  </g>
+  
+  <!-- App name text could go here if needed -->
+</svg>
